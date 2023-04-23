@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+            p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 20px;
+      }
+      body {
+        background-color: #f2f2f2;
+        font-size: 18px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-image: url(poze-proiect-chimie/fhdfhdfhdfhd.png);
+        object-fit: cover;
+      }
+
+      .titlu-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .titlu {
+        font-size: 50px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.15);
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: white;
+      }
+
+
+
+      .nume-participanti {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 30px;
+      }
+
+      .nume-participanti p {
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+      
+      .content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+      }
+
+      .content-container-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+      }
+
+      .content-container-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .content-container-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content-title {
+        font-size: 40px;
+        font-family: sans-serif;
+        padding-top: 10px;
+        padding-bottom: 15px;
+      }
+
+      .content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        background-color: lightblue;
+        box-sizing: border-box;
+        width: 80%;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(10, 102, 194);
+      }
+
+      .enunt {
+        margin-left: 25px;
+      }
+
+
+
+
+      .exemplu {
+        width: 150px;
+        
+      }
+
+      .exemplu-1 {
+        max-width: 450px;
+        float: right;
+      }
+
+      .exemplu-2 {
+        max-width: 450px;
+        float: left;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+
+      .spatiu {
+        font-size: 20px;
+      }
+
+      .poze-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+
+      .font-size {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+      .spatiu-1 {
+        padding-top: 5px;
+
+      }
+      
+      .marime {
+        font-size: 35px;
+        padding-bottom: 10px;
+      }
+      .container-text {
+        padding-left: 40px;
+        padding-top: 10px;
+      }
+
+      .butoane {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: left;
+        position:fixed;
+        left: 0;
+        bottom: 0;
+      }
+      
+
+      .button {
+        background-color: rgb(10, 102, 194);
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-width: 1px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        transition-duration: 0.15s;
+        font-size: 15px;
+      }
+
+      .button-color {
+        color: white;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-width: 1px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+      }
+
+      .button:hover {
+        background-color: white;
+        border-width: 2px;
+      }
+
+      .button-color:hover {
+        color: rgb(10, 102, 194);
+        font-size: 20px;
+      }
+
+      .paint {
+        border-width: 1px;
+        border-style:solid;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      
+      .deseneaza {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        margin-top: 50px;
+      }
+
+      .exces {
+        margin-top: 50px;
+        display: flex;
+        font-size: 35px;
+      }
+
+      .exces-link {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+
+      .left-side {
+        margin-right: 20%;
+      }
+
+      .right-side {
+        margin-left: 20%;
+      }
+
+      .header {
+        background-color: rgb(17, 40, 85);
+      }
+
+      .button-1 {
+        background-color: rgb(17, 40, 85);
+        color: white;
+        border: none;
+        margin-bottom: 20px;
+        margin-top: 3px;
+        margin-left: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="poze-proiect-chimie/Untitled-PhotoRoom.png-PhotoRoom (1).png">
+      <div>
+        <button class="button-1">
+          <a class="button-color" href="index.html"><u>Aminoacizi si proteine</u></a>
+        </button>
+        <button class="button-1">
+          <a class="button-color" href="sintetizare.html"><u>Sintetizare</u></a>
+        </button>
+        <button class="button-1">
+          <a class="button-color" href="despre noi.html"><u>Despre noi</u></a>
+        </button>
+      </div>
+    </div>
+    <div  class="content-container-3">
+      <div class="left-side">
+        <span></span>
+      </div>
+      <div class="content">
+        <div class="content-container-title">
+          <div class="content-title"><u>Aminoacizii</u></div>
+        </div>
+        <div class="font-size">
+          <strong>Ce sunt aminoacizii&#x3f;</strong>
+        </div>
+        <div class="exemplu-container">
+          <div>
+            <img class="exemplu-1" src="poze-proiect-chimie/974_ce_sunt_aminoacizii.webp">
+          </div>
+          <div class="spatiu-1">
+            <p><span class="enunt">Aminoacizii</span> sunt elemente constitutive ale proteinelor, cu numeroase roluri in procesele vitale, de la sinteza hormonilor, la cea a neurotransmitatorilor. Unii dintre acestia pot fi, de altfel, administrati sub forma suplimentelor alimentare, pentru sustinerea performantei atletice.</p>
+          </div>
+          <div class="spatiu-1">
+            <p><span class="enunt">Din</span> punct de vedere chimic, aminoacizii sunt compusi organici cu functiune mixta, ale caror molecule au in componenta gruparile -NH2 si -COOH (amino si carboxil).</p>
+          </div>
+          <div class="spatiu-1">
+            <p><span class="enunt">Organismul</span> uman are nevoie de 20 de aminoacizi pentru a functiona corespunzator. 11 dintre acestia sunt sintetizati de catre corp, iar ceilalti 9, aminoacizii esentiali, pot fi obtinuti doar printr-o alimentatie echilibrata. In cazul deficientelor de aminoacizi, are de suferit sinteza proteinelor, dar pot fi afectate si asimilarea altor nutrienti, precum si imunitatea.</p>
+          </div>
+          <div class="spatiu-1">
+            <p><span class="enunt">Aminoacizii</span>  sunt necesari inclusiv pentru producerea enzimelor. Tocmai de aceea, sunt considerati unii dintre cei mai importanti nutrienti.</p>
+          </div>
+        </div>
+        <div class="content-container-title">
+          <div class="content-title"><u>Importanța aminoacizilor</u></div>
+        </div>
+        <div>
+          <p>
+            <span class="enunt"><strong>&#x2022;Acidul Aspertic :</strong>stimuleaza sistemul imunitar, creste rezistenta organismului si elimina amoniacul din organism;</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Catnitina :</strong> de obicei atletii o consuma deoarece asigura desfasurarea unei activitati sustinute, de durata; grasimile depozitate se pot transforma in energie; poate impiedica aparitia hipoglicemiilor;</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Citrulina :</strong> ajuta la sistarea starii de oboseala, stimuleaza sistemul imunitar, se metabolizeaza in arginina si detoxifica amoniacul care are efecte toxice asupra celulelor;</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Fenilanalina :</strong>  este o substanta naturala cu rol in calmarea durerilor, impiedica selectiv durerea, organismul nu reactioneaza prin obisnuinta, nu apare fenomenul de dependenta. Ajuta memoria si capacitatea intelectuala. Are si efect depresiv;</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Acidul Gama Aminobutric &#8208; G.A.BA:</strong> este unul din tre neurotransmitatorii cei mai cunoscuti, cu rol important in transmiterea impulsului nervos la nivelul creierului. Probabil participa la secretia hormonului de crestere.</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Glicina &#8208; Glicolul :</strong> in cursul metabolizarii, prin pierderea grupului de aminoacizi, se integreaza in glicogen care ulterior se depoziteaza in ficat si muschi. Prin metabolizarea din depozite asigura mentinerea nivelului constant al glucozei sanguine;</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Acidul Glutamic si Glutamina:</strong> amelioreaza functiile creierului, atenueaza starea de oboseala, scurteaza durata vindecarii ulcerelor tubului digestiv, are efect de ameliorare a confortului psihic sau poate fi agent stimulant al creierului;</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Izoleucina :</strong> este necesara sintezei hemoglobinei.</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Lizina :</strong> absenta acestui aminoacid determina greata, ameteli si anemie. Se gaseste in carne, oua, peste, lapte si branzeturi.</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Metionina :</strong>  se gaseste in carne, oua, peste, lapte si branzeturi.Va ajuta ca pielea dumneavoastra sa fie minunata.</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Ornitina :</strong> actioneaza ca element constituent al musculaturii scheletice; creste eficienta argininei</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Prolina :</strong> favorizeaza procesul de vindecare al ranilor, stimuleaza capacitatea intelectuala.</span>
+          </p>
+          <p>
+            <span class="enunt"><strong>&#x2022;Serina :</strong> ajuta la atenuarea durerilor, prin procesul ei de metabolizare determina cresterea cantitatii energiei celulelor si este o substanta cu efect natural antipsihotic.</span>
+          </p>
+          <div style="margin-left: 10px; margin-right: 10px; padding-bottom: 20px;"><span style="color: #add8e6; font-size: 18px;"><a style="margin-left: 10px; width: 1000px; color: #add8e6;" href="https://www.youtube.com/watch?v=pNFWL_EF10I&amp;ab_channel=Scientia.ro">Click</a></span></div>
+        </div>
+        <div class="content-container-title">
+          <div class="content-title"><u>Proprietati fizice</u></div>
+        </div>
+        <div>
+          <p>
+            &#x2022;Aminoacizii sunt substanţe solide, cristalizate, solubile în apă (cu excepţia cisteinei, cistinei şi treoninei).
+          </p>
+          <p>
+            &#x2022;Au punct de topire şi fierbere relativ ridicate, peste 200°C.
+          </p>
+          <p>
+            &#x2022;Cu excepţia <strong>glicocolului</strong>, atomul de carbon &#x0251; din structura aminoacizilor este asimetric.
+          </p>
+          <p>
+            &#x2022;În consecinţă, aminoacizii prezintă activitate optică, având capacitatea de a roti planul luminii polarizate.
+          </p>
+          <p>
+            &#x2022;În natură se găseşte de obicei, numai una din formele optic active, dextrogiră sau levogiră. Aminoacizii obţinuţi prin sinteză sunt <strong>racemici</strong>.
+          </p>
+        </div>
+        <div class="content-container-title">
+          <div class="content-title"><u>Proteinele</u></div>
+        </div>
+        <div class="font-size">
+          <strong>Ce sunt proteinele&#x3f;</strong>
+        </div>
+        <div>
+          <img class="exemplu-2" src="poze-proiect-chimie/th.jpeg">
+        </div>
+        <p>
+          <span class="enunt"><strong>Proteinele sunt molecule de dimensiuni mari, indispensabile funcționării celulelor. Sunt substanțe organice macromoleculare formate din lanțuri simple sau complexe de aminoacizi; ele sunt prezente în celulele tuturor organismelor vii în proporție de peste 50% din greutatea uscată.</strong></span>
+        </p>
+        <p>
+          <span class="enunt">Proteina se găsește în tot corpul &#8208; în mușchi, oase, piele, păr, și practic orice altă parte a corpului sau țesut. </span>
+        </p>
+        <div class="font-size">
+          <strong><u>Rolul proteinelor in organism&#58;</u></strong>
+        </div>
+        <div>
+          <p>
+            &#x2022;<strong>structural</strong>, deoarece intră în structura tuturor celulelor;
+          </p>
+          <p>
+            &#x2022;<strong>catalytic</strong> &#8208; intră în structura <strong>enzimelor</strong>;
+          </p>
+          <p>
+            &#x2022;de reglare &#8208; intră în structura unor <strong>hormoni</strong>;
+          </p>
+          <p>
+            &#x2022;<strong>imunostimulator</strong> &#8208; intervin în procesul de apărare al organismului, participând la formarea anticorpilor;
+          </p>
+          <p>
+            &#x2022;<strong>de echilibru</strong> &#8208; intervin în menținerea echilibrului osmotic la nivel celular;
+          </p>
+          <p>
+            &#x2022;pot fi utilizate ca material energetic (1 g P = 4,1 cal).
+          </p>
+          <p>
+            &#x2022;<strong>In medie</strong>, o femeie poate consuma pana la 2000 de calorii pe zi pentru a-si mentine greutatea in timp ce  un barbat consuma in medie 2500 de calori pentru a-si mentine greutatea.
+          </p>
+        </div>
+        <div class="marime">
+          <u>Ce cantitate de proteine este recomandat sa mananci pe zi&#x3f;</u>
+        </div>
+        <div>
+          <p>
+            <span class="enunt">Iti poti asigura nevoile zilnice de proteine din surse animale, vegetale sau o combinatie din cele doua.</span>
+          </p>
+          <p>
+            <span class="enunt">Daca dieta ta include oua, carne slaba si&#x2215;sau peste si produse lactate precum lapte, branza si iaurt in fiecare zi, atunci probabil ca iti satisfaci nevoile de proteine in mod regulat. Soia, fasolea, lintea, mazarea, nucile, semintele si cerealele integrale precum amarant si quinoa sunt, de asemenea, proteine de inalta calitate care pot servi ca surse vegetariene de proteine.</span>
+          </p>
+          <p>
+            <span class="enunt">Cantitatea de proteine recomandata zilnic depinde de greutatea si de varsta persoanei. Pe masura ce inaintam in varsta masa musculara se pierde. Acest proces natural al imbatranirii se numeste sarcopenie si poate incepe de la varsta de 40 de ani si continua progresiv. De exemplu, la varsta de 80 de ani, o femeie poate sa-si fi pierdut jumatate din masa musculara scheletica. Consumul unei cantitati adecvate de proteine din carne, soia, quinoa, fasole, oua, produse lactate, nuci si seminte va reduce degradarea muschilor.</span>
+          </p>
+          <p>
+            <span class="enunt">In functie de varsta, societatile medicale recomanda urmatorul consum zilnic de proteine:</span>
+          </p>
+          <p>
+            <span class="enunt">&#x2022; &#x3c; 19 ani: 0.85-1.2 g per kilogram corp. De exemplu, un copil care cantareste 18 kilograme are nevoie de aproximativ 18 grame de proteine pe zi</span>
+          </p>
+          <p>
+            <span class="enunt">&#x2022; 18&#8208;49 ani: 0.8 g per kilogram corp. Un tanar adult care cantareste 75 kilograme va avea nevoie de aproximativ 60 grame de proteine pe zi, aproximativ 20 grame la o masa principala.</span>
+          </p>
+          <p>
+            <span class="enunt">&#x2022; &#x2215;&#x3d; 50 ani: 1.2 g per kilogram corp. Un adult in varsta de 60 de ani care cantareste 62.5 kilograme va avea nevoie de aproximativ 75 grame de proteine pe zi, aproximativ 25 grame la o masa.</span>
+          </p>
+        </div>
+      </div>
+      <div class="right-side">
+        <span></span>
+      </div>
+    </div>
+  </body>
+</html>
